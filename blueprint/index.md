@@ -6,7 +6,7 @@ icon: blueprint
 image: images/overview.png
 category: 5
 summary: |
-  This blueprint demonstrates how to integration Salesforce Connect with the Genesys Cloud Analytic API's. Once Salesforce Connect is pulling in Analytics data from Genesys Cloud, dashboards can be built directly inside Salesforce to visualize the data. 
+  This blueprint demonstrates how to integrate Salesforce Connect with the Genesys Cloud Analytic API's. Once Salesforce Connect is pulling in Analytics data from Genesys Cloud, dashboards can be built directly inside Salesforce to visualize the data. 
 ---
 
 This blueprint demonstrates how to integrate Salesforce Connect with the Genesys Cloud Analytic API's. Once Salesforce Connect is quering Analytics data from Genesys Cloud, dashboards can be built directly inside Salesforce to visualize the data. 
