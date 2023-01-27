@@ -3,4 +3,4 @@ This blueprint demonstrates how to integrate Salesforce Connect with the Genesys
 
 You can view the complete blueprint and download the sample files from [here](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint).
 
-![Render Genesys Cloud Analytics data in Salesforce Dashboards](images/overview.png)
+![Render Genesys Cloud Analytics data in Salesforce Dashboards](blueprint/images/overview.png)
