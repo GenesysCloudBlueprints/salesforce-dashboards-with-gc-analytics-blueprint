@@ -290,18 +290,18 @@ In order to use the Apex classes, they will need to be imported into Salesforce.
 
 1. Open **Setup**.
 
-![Step 1](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git1.png?raw=true)
+![Step 1](images/git1.png)
 
 2. Search for **apex** in the Quick Find and select **Apex Classes** then **New**.
 
-![Step 2](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git2.png?raw=true)
+![Step 2](images/git2.png)
 
 3. Paste in the code for DataSource.Connection clas first, save the Apex class, then repeat for the DataSource.Provider Apex class.
 
 > YOU MUST ADD THE DATASOURCE.CONNECTION APEX CLASS FIRST.
 > The code will be checked for syntax errors. If any syntax errors are triggered, they will be to be resolved before the Apex Class can successfully be saved. 
 
-![Step 3](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git3.png?raw=true)
+![Step 3](images/git3.png)
 
 
 ## Creating Salesforce External Data Source and related External Object
@@ -313,17 +313,17 @@ Now that the required Apex classes are imported, an External Data Source will ne
 2. Search for **external** In the Quick Find
 
 3. Select **External Data Sources**. 
-![Step 4](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/imagse/git4.png?raw=true)
+![Step 4](images/git4.png)
 
 4. Select **New External Data Source** 
-![Step 4.1](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git4.1.png?raw=true)
+![Step 4.1](images/git4.1.png)
 
 5. Fill in the required information about the External Data Source:
     - Type: Select the name of the recently imported Apex DataSource.Provider classes
     - Identity Type: Leave at default value
     - Authentication Protocol: Leave at default value
 
-![Step 5](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git5.png?raw=true)
+![Step 5](images/git5.png)
 
 6. Repeat these steps 2 more times for the other two DataSource.Provider Apex Classes
 
@@ -335,7 +335,7 @@ After the 3 External Data Source's are created, Salesforce External Data Objects
 2. Select **External Objects**
 
 3. Select **New External Object**
-![Step 3](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git6.png?raw=true)
+![Step 3](images/git6.png)
 
 4. Fill in the required information about the External Object. 
     - Object Name - unqiue name of the External Object
@@ -344,7 +344,7 @@ After the 3 External Data Source's are created, Salesforce External Data Objects
     - Optional Features
         - Allow Reports: **YOU MUST ENABLE REPORTS FOR THIS TO SHOW**
 
-![Step 4](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git7.png?raw=true)
+![Step 4](images/git7.png)
 
 5. When you are done select "Save" and then proceed to open the newly created External Object. 
 
@@ -364,7 +364,7 @@ After the 3 External Data Source's are created, Salesforce External Data Objects
     }
 ```
 
-![Step 11](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git8.png?raw=true)
+![Step 11](images/git8.png)
 
 7. Repeat these steps 2 more times for the other two External Data Sources
 
@@ -373,11 +373,11 @@ After the External Data Sources and Objects are created, Reports can be created 
 
 1. From your Salesforce App, navigate to **Reports** and start a **New Report** which will launch the **Report Builder**. If Reports are not available in your Salesforce App, this will need to be added. 
 
-![Step 1](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git9.png?raw=true)
+![Step 1](images/git9.png)
 
 2. From here, select **Other Reports** and find the Salesforce External Object's you named earlier (there will be 3 entries for this Blueprint). Then **Start Report**.
 
-![Step 2](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git10.png?raw=true)
+![Step 2](images/git10.png)
 
 This Blueprint will create 3 reports that links to the External Data Sources. After clicking **Other Reports** and finding the Salesforce External Object's, select **Run** as this will kick off the Apex class and return data from the Genesys Cloud Analytics API. Once a query has been performed, the report builder will render the fields and results that then can be modified and manipulated:
 
@@ -386,7 +386,7 @@ This Blueprint will create 3 reports that links to the External Data Sources. Af
 2. Create a chart and set the values to match the image below. Making sure to check **Show Values** and set the legend to the bottom.
 3. Verify the chart looks relevant and save it with an appropriate name.
 
-![Step 3](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git21.png?raw=true)
+![Step 3](images/git21.png)
 
 1. Set Group Rows to *Queue*. Then set *Waiting*, *Alerting*, and *Interacting* to your Columns Selection.
 2. Create a chart and set the values to match the image below. Making sure to check **Show Values** and set the legend to the bottom.
@@ -397,7 +397,7 @@ This Blueprint will create 3 reports that links to the External Data Sources. Af
 2. Create a chart and add the values from the image below.
 3. Verify the data and save with an appropriate name.
 
-![Step 3](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git13.png?raw=true)
+![Step 3](images/git13.png)
 
 ### Survey Observations
 1. Set *Media Type* as your Group Rows and *Surveys Sent* and *Survey Responses* 
@@ -405,7 +405,7 @@ This Blueprint will create 3 reports that links to the External Data Sources. Af
 3. Verify the chart makes sense. 
 4. Verify the chart looks relevant and save it with an appropriate name.
 
-![Step 4](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git11.png?raw=true)
+![Step 4](images/git11.png)
 
 1. You will need to set the Group Rows to *Media Type* first.
 2. Open the fields menu from the left side of the page and select *Create Formula*.
@@ -414,28 +414,28 @@ This Blueprint will create 3 reports that links to the External Data Sources. Af
 5. Create a chart to reflect the values from the image below. Making sure to check **Show Values** and set the legend to the bottom.
 6. Verify the chart looks relevant and save it with an appropriate name.
 
-![Step 6](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git12.png?raw=true)
+![Step 6](images/git12.png)
 
 
 ## Creating a dashboard
 
 1. From your Salesforce App, navigate to **Dashboards** and start a **New Dashboard** which will launch the Dashboard build UI. 
-![Step 1](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git15.png?raw=true)
+![Step 1](images/git15.png)
 
 2. Select the **New Dashboard** button, which will launch the Dashboard build UI. 
-![Step 2](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git16.png?raw=true)
+![Step 2](images/git16.png)
 
 3. Provide an appropriate name and select *Create*
-![Step 3](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git17.png?raw=true)
+![Step 3](images/git17.png)
 
 4. Select **Add component**. Add each report (a total of 3 reports in this Blueprint) one at a time
-![Step 4](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git18.png?raw=true)
+![Step 4](images/git18.png)
 
 5. Make sure to select **Use chart settings from report**. Otherwise it will not look the way you set up.
-![Step 5](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git19.png?raw=true)
+![Step 5](images/git19.png)
 
 6. Once the report is saved, it will look similar to the following:
-![Step 6](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/images/git20.png?raw=true)
+![Step 6](images/git20.png)
 
 ## Additional resources
 
