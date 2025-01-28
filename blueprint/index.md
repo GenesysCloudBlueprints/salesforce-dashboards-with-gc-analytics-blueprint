@@ -75,7 +75,7 @@ You will need to import two Apex class files for each desired Genesys Cloud Anal
 ### Data Source Connection
 **This Apex class contains the Genesys Cloud Analytics API query as well as the logic to process the response.**
 
-Three example Apex classes are included in this [repo](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/blueprint/apex-classes) that will setup 3 individual data source connections:
+Three example Apex classes are included in this [repo](https://github.com/GenesysCloudBlueprints/salesforce-dashboards-with-gc-analytics-blueprint/tree/main/blueprint/apex-classes) that will setup 3 individual data source connections:
 * gcQueueDataSourceConnection.cls - Queue Observation Analytics API query
 * gcSurveyDataSourceConnection.cls - Survey Aggregates Analytics API query
 * gcWFMDataSourceConnection.cls - Conversations Aggregates Analytics API query
